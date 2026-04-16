@@ -15,12 +15,16 @@ This extension adds a **post-processing layer** on top of Figma's official `capt
 
 ## Setup
 
-**Note:** This fork (`Ryskii0/figma-capture`) already includes the pre-built `capture.js` and a default `font-map.json`, making it **ready to use immediately without any command-line setup!**
-
-1. Download this repository as a ZIP file and extract it.
-2. Go to `chrome://extensions` in your Chrome browser, and enable **Developer mode** (top right corner).
-3. Click **Load unpacked** (top left) and select the extracted folder.
-4. (Optional) If you want to update the Figma script to the absolute latest version yourself, you can still run `make` in the terminal, but it is **not required**.
+1. Download `capture.js` from Figma:
+   ```
+   make
+   ```
+2. Copy the font mapping example and customize as needed:
+   ```
+   cp font-map.example.json font-map.json
+   ```
+3. Go to `chrome://extensions`, enable **Developer mode**
+4. Click **Load unpacked** and select this directory
 
 ## Usage
 
